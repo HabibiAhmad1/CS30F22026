@@ -108,7 +108,7 @@ public class classDemo {
 				Display.setText(firstN
 						+ " " + lastN ); 
 				
-
+//s
 			}
 		});
 		Submit.setBounds(25, 97, 219, 52);
