@@ -1,3 +1,4 @@
+package SkillBuilders;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -105,8 +106,7 @@ public class classDemo {
 				String firstN = FN.getText();
 				String lastN = LN.getText();
 				
-				Display.setText(firstN
-						+ " " + lastN ); 
+				Display.setText(firstN + " " + lastN ); 
 				
 //
 			}
