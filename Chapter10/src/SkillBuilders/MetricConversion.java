@@ -10,11 +10,13 @@ import javax.swing.JInternalFrame;
 import javax.swing.DefaultComboBoxModel;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JTextField;
 
 
 public class MetricConversion {
 
 	private JFrame frmMetricConversion;
+	private JTextField textField;
 	
 
 	/**
@@ -54,10 +56,6 @@ public class MetricConversion {
 		lblNewLabel.setBounds(10, 11, 94, 28);
 		frmMetricConversion.getContentPane().add(lblNewLabel);
 		
-		JLabel FormulaLabel = new JLabel("1 inch = 2.54 centimeters");
-		FormulaLabel.setBounds(232, 56, 202, 28);
-		frmMetricConversion.getContentPane().add(FormulaLabel);
-		
 		JLabel dsiplay = new JLabel("New label");
 		dsiplay.setBounds(10, 50, 235, 41);
 		frmMetricConversion.getContentPane().add(dsiplay);
@@ -87,10 +85,14 @@ public class MetricConversion {
 		        
 		    }
 		});
-		conv.setModel(new DefaultComboBoxModel(new String[] {"Inches to Centimeters", "Feet to Meters", "Gallons to Litres", "Pounds to Kilograms"}));
-		conv.setSelectedIndex(1);
+		conv.setModel(new DefaultComboBoxModel(new String[] {"Click here", "Inches to Centimeters", "Feet to Meters", "Gallons to Litres", "Pounds to Kilograms"}));
 		conv.setBounds(114, 14, 151, 22);
 		frmMetricConversion.getContentPane().add(conv);
+		
+		textField = new JTextField();
+		textField.setBounds(231, 60, 180, 49);
+		frmMetricConversion.getContentPane().add(textField);
+		textField.setColumns(10);
 		
 		
 	}
