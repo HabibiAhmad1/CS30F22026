@@ -145,22 +145,5 @@ public class WordGuess
         input.close();
     }
 
-    /*public static int countWords() throws IOException
-    {
-        File wordFile = new File("../Chapter11/src/words.txt");
-        FileReader in = new FileReader(wordFile);
-        BufferedReader readFile = new BufferedReader(in);
-
-        int count = 0;
-        while (readFile.readLine() != null)
-        {
-            count++;
-        }
-
-        readFile.close();
-        in.close();
-
-        return count;
-    }
-    */
+    
 }
